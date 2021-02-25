@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Password_Genertor</title>
+        <meta charset="UTF-8">
+        <meta descriptipn=" This website provide the unique password for the users who are in need of it ---> grib the chance to open and check it out for more info">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static 'css/pg.css' %}" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="header">
+        <h1> PAssWOrd GEneratOR</h1>
+    </div>
+    <div class="menu">
+     <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'Need_of_password' %}">Need_Of_Password</a></li>
+        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+    </ul>    
+    </div>
+     
+    <div class="middle">
+       <img id="img1" src="{% static 'css/images/wfh.png' %}" alt=" working_pic" width="150" height="120">
+       <br>
+       <br>
+       <p id="para1">A <strong>password</strong> sometimes called a passcode,is a memorized secret, typically a string of characters, usually used to confirm a user's identity. Using the terminology of the NIST Digital Identity Guidelines, the secret is memorized by a party called the claimant while the party verifying the identity of the claimant is called the verifier. When the claimant successfully demonstrates knowledge of the password to the verifier through an established authentication protocol, the verifier is able to infer the claimant's identity.
+       </p>
+       <p id="para2">
+           <br>
+        In general, a password is an arbitrary string of characters including letters, digits, or other symbols. If the permissible characters are constrained to be numeric, the corresponding secret is sometimes called a personal identification number (PIN).
+       </p>
+    </div>
+    <div class="middle2">
+        <img id="img2" src="{% static 'css/images/ch.png' %}" alt="computer_hacker_LOGO" width="140px" height="120px">
+        <br>
+        <br>
+        <p id="para3"><strong><b>Importance of password</b></strong>Passwords provide the first line of defense against unauthorized access to your computer and personal information. The stronger your password, the more protected your computer will be from hackers and malicious software. You should maintain strong passwords for all accounts on your computer.</p>
+        <br>
+        <p id="para4">A strong password provides essential protection from financial fraud and identity theft. One of the most common ways that hackers break into computers is by guessing passwords. Simple and commonly used passwords enable intruders to easily gain access and control of a computing device.
+        Helps you to keep it away from the hackers.
+        </p>
+    </div>
+    <div class="form-group">
+        <br/>
+        <br/>
+        <br/>
+        <h2>FORM TO FILL</h2>
+        <form action="" method="POST">
+        {% csrf_token %}
+            {{form.as_p}}
+            <!-- <a class="btn btn-danger" href="pass_gen" role="button">Generate Password</a> -->
+            <input type="submit" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" value="Submit" >
+        </form>
+        
+        <br>
+        <br>
+        {{n}}
+        <br>
+    </div>
+    <div class="fotter">
+        <h6> created by : sudhir M Dandinvar| © : 2021| password generator website</h6>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body, html{
+    background-image: url("sample5.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 130% ;
+    /* -webkit-background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size:cover; */
+    /* background-size:cover; */
+    /* background-repeat: no-repeat;
+    /* width: 100%;
+    height: 200%; */
+    /* background-size: cover; */
+    
+}
+.header{
+    color: white;
+    width: 450px;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-style: italic;
+    font-size: 0.5cm;
+}
+.menu {
+    float: right;
+}
+.menu li{
+    top: 0;
+    list-style-type: none;
+    display: inline;
+    margin-right: 15px;
+    padding: 5px;
+
+}
+.menu li > a{
+    margin-bottom: 25px;
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    margin-right: 25px;
+    padding: 5px;
+    font-size: 0.5cm;
+    font-weight: 800;
+    text-shadow: 1.5px 1.5px rgb(207, 207, 207);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+a:listed, a:visited{
+    background-color: brown;
+}
+a:hover, a:active{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.925);
+    
+}
+.middle{
+    float: left;
+    color: rgba(250, 245, 245, 0.973);
+    width: 600px;
+    padding: 5px;
+    margin-left: 50px;
+    
+
+}
+#img1{
+    margin-left: 110px;
+    margin-top: 110px;
+}
+#para1, #para2{
+  font-size: 0.4cm;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.middle2{
+    width: 600px;
+    float: right;
+    margin-right: 60px;
+    margin-top: 80px;
+    padding: 5px;
+    color: rgb(252, 248, 248);
+}
+#img2{
+    margin-left: 160px;
+    padding: 2px;
+}
+#para3, #para4{
+    font-size: 0.4cm;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+.need_of_password{
+    color: white;
+    float: inline-start;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+#para5, #para6, #para7, #para8{
+    width: 1200px; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form-group{
+    width: 600px;
+    padding: 30px;
+    margin-top: 500px;
+}
+.form-group > h2{
+    margin-left: 60px;
+    text-shadow: bold;
+    text-shadow: 2px 2px rgb(119, 32, 32);
+}
+.form-group > form{
+    margin-left: 60px;
+    width:400px;
+}
+.click form > a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.5cm;
+    text-align: left;
+    margin-right: 50px;
+    background-color: white;
+    border-radius: 15px;
+    padding:10px;
+    font-weight: bold;
+}
+.contact{
+    margin-left: 80px;
+    margin-top: 150px;
+    text-shadow: 1px 1px rgb(124, 10, 10);
+    width: 800px;
+}
+.contact > #imgc1{
+   margin-left: 200px;
+}
+.contact > h4, h3{
+    text-shadow: 1px 1px rgb(180, 50, 50);
+    font-size: 0.5cm;
+}
+.fotter{
+    float: right;
+    font-weight: bold;
+    font-size: 0.6cm;
+}
+.h1{
+    width: 200px;
+    margin-left: 60px;
+    text-align: center;
+
+}
+@media only screen and (min-width:562px) and (max-width: 800px){
+    .body, .html{
+        background-color: rgb(7, 119, 194);
+    }
+    .header{
+        width: 60%;
+    }
+    .menu li > a{
+        width: fit-content;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 562px){
+    .body, .html{
+        background-color: rgb(7, 119, 194);
+    }
+    .header{
+        width: 40%;
+    }
+    .menu li > a{
+        width:55%
+    }
+}

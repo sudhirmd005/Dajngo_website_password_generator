@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Password_Genertor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static 'css/pg.css' %}" rel="stylesheet">
+    </head>
+    <body>
+    <div class="header">
+        <h1> PAssWOrd GEneratOR</h1>
+    </div>
+    <div class="menu">
+     <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'Need_of_password' %}">Need_Of_Password</a></li>
+        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+    </ul>    
+    </div>
+    <div class="contact">
+        <H2>THANK YOU FOR USING PASSWORD GENERATOR ---</H2>
+        <br/>
+        <br/><img id="imgc1" src="{% static 'css/images/thank_you.png' %}" alt="thank you image" width="120" height="90">
+        <br/>
+        <br/>
+        <br/>
+        <H3>If you need to contact us, below are the details:</H3>
+        <br/>
+        <div  class="in_contact"></div>
+            <h4>Name: Sudhir Dandinavar</h4>
+            <h4>Contact: 9738901762</h4>
+            <h4>Email ID: alltechybusiness@gmail.com</h4>
+        </div>
+    </div>
+    </body>
+</html>
