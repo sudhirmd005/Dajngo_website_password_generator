@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'k(4h1&_uzm9)v^++2ashmekq$-7cloq9g@h&#%6^@2qb19(!+-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 EMAIL_BACKEND  = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -41,8 +41,8 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
 
-# ALLOWED_HOSTS = ['127.0.0.1/index','passwordgeneratorr.herokuapp.com']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1/index','passwordgeneratorr.herokuapp.com']
+# ALLOWED_HOSTS = ['*']
 
 
 # Application definition
