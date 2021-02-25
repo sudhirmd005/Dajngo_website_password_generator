@@ -41,7 +41,7 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
 
-ALLOWED_HOSTS = ['127.0.0.1/index','passwordgeneratorr.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','passwordgenerators.herokuapp.com']
 # ALLOWED_HOSTS = ['*']
 
 
